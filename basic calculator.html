@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Basic Calculator</h1>
+<button onclick="Add()">Add</button>
+<button onclick="Subtract()">Subtract</button>
+<button onclick="Multiply()">Multiply</button>
+<button onclick="Divide()">Divide</button>
+
+<p id="add">Sum</p>
+<p id="subtract">Difference</p>
+<p id="multiply">Product</p>
+<p id="divide">Quotient</p>
+
+<script>
+function Add() {
+  let num1 = prompt("Please enter the first number:");
+  let num2 = prompt("Please enter the second number:");
+  if (num1 != null) {
+    document.getElementById("add").innerHTML =
+    parseFloat(num1) + parseFloat(num2);
+  }
+}
+
+function Subtract() {
+  let num1 = prompt("Please enter the first number:");
+  let num2 = prompt("Please enter the second number:");
+  if (num1 != null) {
+    document.getElementById("subtract").innerHTML =
+    parseFloat(num1) - parseFloat(num2);
+  }
+}
+
+function Multiply() {
+  let num1 = prompt("Please enter the first number:");
+  let num2 = prompt("Please enter the second number:");
+  if (num1 != null) {
+    document.getElementById("multiply").innerHTML =
+    parseFloat(num1) * parseFloat(num2);
+  }
+}
+
+function Divide() {
+  let num1 = prompt("Please enter the first number:");
+  let num2 = prompt("Please enter the second number:");
+  if (num1 != null) {
+    document.getElementById("divide").innerHTML =
+    parseFloat(num1) / parseFloat(num2);
+  }
+}
+</script>
+
+</body>
+</html>
